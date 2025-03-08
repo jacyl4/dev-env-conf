@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 [Colors]
 Black=40,40,40
 BoldBlack=235,219,178
@@ -21,30 +18,4 @@ BoldCyan=142,221,244
 ForegroundColour=213,196,161
 BackgroundColour=40,40,40
 CursorColour=251,241,199
-=======
->>>>>>> e42ff6fcccef009cebaa3441f50b0f8830711ead
-[Colors]
-Black=40,40,40
-BoldBlack=235,219,178
-White=213,196,161
-BoldWhite=251,241,199
-Red=255,96,96
-BoldRed=255,128,128
-Green=14,177,108
-BoldGreen=24,237,147
-Yellow=190,190,18
-BoldYellow=222,220,18
-Blue=18,150,190
-BoldBlue=27,186,233
-Magenta=255,77,255
-BoldMagenta=255,125,255
-Cyan=84,204,239
-BoldCyan=142,221,244
-ForegroundColour=213,196,161
-BackgroundColour=40,40,40
-<<<<<<< HEAD
-CursorColour=251,241,199
-=======
-CursorColour=251,241,199
->>>>>>> bc13f7e7dba63251cf3170629122e92444082e52
->>>>>>> e42ff6fcccef009cebaa3441f50b0f8830711ead
+
