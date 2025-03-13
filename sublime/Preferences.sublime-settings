@@ -9,5 +9,5 @@
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"font_face": "Cascadia Mono Light",
-	"open_files_in_new_window": "true",
+	"open_files_in_new_window": true,
 }
