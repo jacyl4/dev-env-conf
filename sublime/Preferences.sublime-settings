@@ -1,0 +1,13 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Gruvbox Material Dark.sublime-color-scheme",
+	"theme": "Gruvbox Material Dark.sublime-theme",
+	"index_files": true,
+	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"font_face": "Cascadia Mono Light",
+	"open_files_in_new_window": "true",
+}
