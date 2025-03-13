@@ -8,7 +8,7 @@
 	"index_files": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
-	"font_face": "Cascadia Mono Light",
+	"font_face": "Cascadia Mono Light, Cascadia Mono",
 	"open_files_in_new_window": true,
 	"close_windows_when_empty": true
 }
