@@ -1,7 +1,6 @@
 {
 	"ignored_packages":
 	[
-		"Vintage",
 	],
 	"color_scheme": "gruvbox (Dark) (Medium) NDC.sublime-color-scheme",
 	"theme": "Gruvbox Material Dark.sublime-theme",
