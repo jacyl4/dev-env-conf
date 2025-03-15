@@ -5,7 +5,13 @@
 	],
 	"installed_packages":
 	[
+		"BracketHighlighter",
+		"ConvertToUTF8",
+		"gruvbox",
 		"Gruvbox Material Theme",
 		"Package Control",
+		"SideBarEnhancements",
+		"Singularity Definition File Syntax",
+		"SublimeLinter",
 	],
 }
