@@ -1,20 +1,23 @@
 #!/bin/bash
+
 [[ -z $(dpkg -l | awk '{print$2}' | grep '^zsh$') ]] && apt update && apt install zsh
 
-if [[ -z $(zimfw version) ]]; then
+if [[ ! -e "/$HOME/.zimrc" ]]; then
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 fi
 
-sed -i '/zmodule completion/d' ~/.zimrc
+sed -i '/compinit/d' ~/.zshrc
+echo 'autoload -Uz compinit; compinit' >> /$HOME/.zshrc
+
+sed -i '/zmodule completion/d' /$HOME/.zimrc
 sed -i '/zmodule fzf/d' ~/.zimrc
-sed -i '/zmodule Aloxaf/fzf-tab/d' ~/.zimrc
-sed -i '/zmodule romkatv/powerlevel10k/d' ~/.zimrc
-cat << EOF >>~/.zimrc
+sed -i '/zmodule Aloxaf\/fzf-tab/d' /$HOME/.zimrc
+sed -i '/zmodule romkatv\/powerlevel10k/d' /$HOME/.zimrc
+cat << EOF >> /$HOME/.zimrc
 zmodule fzf
 zmodule Aloxaf/fzf-tab
 zmodule romkatv/powerlevel10k
 EOF
 
-wget --show-progress -cqO ~/.p10k.zsh https://raw.githubusercontent.com/jacyl4/dev-env-conf/main/zim/p10k.zsh
+wget --show-progress -cqO /$HOME/.p10k.zsh https://raw.githubusercontent.com/jacyl4/dev-env-conf/main/zim/p10k.zsh
 
-zimfw install
