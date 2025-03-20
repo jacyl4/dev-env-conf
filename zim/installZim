@@ -6,7 +6,7 @@ if [[ ! -e "/$HOME/.zimrc" ]]; then
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 fi
 
-sed -i '/compinit/d' ~/.zshrc
+sed -i '/compinit/d' /$HOME/.zshrc
 echo 'autoload -Uz compinit; compinit' >> /$HOME/.zshrc
 
 sed -i '/zmodule completion/d' /$HOME/.zimrc
@@ -18,6 +18,4 @@ zmodule fzf
 zmodule Aloxaf/fzf-tab
 zmodule romkatv/powerlevel10k
 EOF
-
-wget --show-progress -cqO /$HOME/.p10k.zsh https://raw.githubusercontent.com/jacyl4/dev-env-conf/main/zim/p10k.zsh
 
