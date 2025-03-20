@@ -1,6 +1,9 @@
 #!/bin/bash
-apt install zsh
+[[ -z $(dpkg -l | awk '{print$2}' | grep '^zsh$') ]] && apt update && apt install zsh
+
+if [[ -z $(zimfw version) ]]; then
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+fi
 
 sed -i '/zmodule completion/d' ~/.zimrc
 sed -i '/zmodule fzf/d' ~/.zimrc
