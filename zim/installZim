@@ -1,6 +1,11 @@
 #!/bin/bash
 
-[[ -z $(dpkg -l | awk '{print$2}' | grep '^zsh$') ]] && apt update && apt install zsh fzf fd-find ripgrep ugrep bfs
+[[ -z $(dpkg -l | awk '{print$2}' | grep '^zsh$') ]] && sudo apt update && sudo apt install zsh fd-find ripgrep ugrep bfs
+sudo ln -s $(which fdfind) /usr/local/bin/fd
+sudo sed -i '/want compinit called here/,/^$/d' /etc/zsh/zshrc
+
+git clone --depth 1 https://github.com/junegunn/fzf.git /$HOME/.fzf
+/$HOME/.fzf/install
 
 if [[ ! -e "/$HOME/.zimrc" ]]; then
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
@@ -17,7 +22,6 @@ zmodule prompt
 zmodule duration-info
 zmodule git-info
 zmodule asciiship
-zmodule completion
 zmodule zsh-users/zsh-completions --fpath src
 zmodule zsh-users/zsh-history-substring-search
 zmodule zsh-users/zsh-autosuggestions
@@ -27,9 +31,10 @@ zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule romkatv/powerlevel10k
 zmodule fzf
 zmodule Aloxaf/fzf-tab
-zmodule supercrabtree/k
 zmodule hlissner/zsh-autopair
 zmodule pabloariasal/zfm
+zmodule supercrabtree/k
 zmodule agkozak/zsh-z
 EOF
 
+chsh -s $(which zsh)
