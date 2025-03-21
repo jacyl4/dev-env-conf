@@ -14,6 +14,7 @@ if [[ ! -e "/$HOME/.zimrc" ]]; then
 fi
 
 sed -i '/compinit/d' /$HOME/.zshrc
+echo 'autoload -Uz compinit; compinit' >> /$HOME/.zshrc
 cat << EOF >| /$HOME/.zimrc
 zmodule environment
 zmodule git
