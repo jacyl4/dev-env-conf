@@ -1,14 +1,16 @@
 #!/bin/bash
 
-[[ -z $(dpkg -l | awk '{print$2}' | grep '^zsh$') ]] && sudo apt update && sudo apt install zsh fd-find ripgrep ugrep bfs
+[[ -z $(dpkg -l | awk '{print$2}' | grep '^zsh$') ]] && sudo apt update && sudo apt install zsh git fd-find ripgrep ugrep bfs
 sudo ln -s $(which fdfind) /usr/local/bin/fd
 sudo sed -i '/want compinit called here/,/^$/d' /etc/zsh/zshrc
 
-git clone --depth 1 https://github.com/junegunn/fzf.git /$HOME/.fzf
-/$HOME/.fzf/install
+if [[ -z $(fzf --version) ]]; then
+    git clone --depth 1 https://github.com/junegunn/fzf.git /$HOME/.fzf
+    /$HOME/.fzf/install
+fi
 
 if [[ ! -e "/$HOME/.zimrc" ]]; then
-curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+    curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 fi
 
 sed -i '/compinit/d' /$HOME/.zshrc
