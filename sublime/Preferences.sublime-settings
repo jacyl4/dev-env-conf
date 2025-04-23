@@ -15,5 +15,5 @@
 	"open_files_in_new_window": "always",
 	"close_windows_when_empty": true,
 	"hot_exit": "disabled",
-    "remember_layout": false
+    "remember_layout": false,
 }
