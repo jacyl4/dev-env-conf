@@ -13,16 +13,12 @@ Dpkg::Options {
 };
 EOF
 
-
-
-[[ -n $(dpkg -l | awk '{print$2}' | grep '^os-prober') ]] && apt remove --purge os-prober
-
 unset aptPKG
 [[ -z $(dpkg -l | awk '{print$2}' | grep '^gnupg2$') ]] && aptPKG+=(gnupg2)
 [[ -z $(dpkg -l | awk '{print$2}' | grep '^curl$') ]] && aptPKG+=(curl)
 [[ -z $(dpkg -l | awk '{print$2}' | grep '^python3$') ]] && aptPKG+=(python3)
 [[ -z $(which 'update-grub') ]] && [[ -d "/sys/firmware/efi" ]] && aptPKG+=(grub-efi)
-[[ -z $(which 'update-grub') ]] && [[ ! -d "/sys/firmware/efi" ]] && aptPKG+=(grub2-common)
+[[ -z $(which 'update-grub') ]] && [[ ! -d "/sys/firmware/efi" ]] && aptPKG+=(grub-pc)
 [[ -n $aptPKG ]] && apt update && apt install -y $(echo ${aptPKG[@]})
 mkdir -p /boot/grub
 rm -f /var/cache/apt/archives/lock
@@ -81,9 +77,9 @@ echo "deb [signed-by=/etc/apt/keyrings/zabbly.asc] https://pkgs.zabbly.com/kerne
 apt update && apt install linux-zabbly
 
 dpkg --list | awk '{print $2}' | grep 'linux-image' | sed "/zabbly/d" | while read line; do
-apt autoremove --purge -y $line
+apt remove --purge -y $line
 done
 
 dpkg --list | awk '{print $2}' | grep 'linux-headers' | sed "/zabbly/d" | while read line; do
-apt autoremove --purge -y $line
+apt remove --purge -y $line
 done
