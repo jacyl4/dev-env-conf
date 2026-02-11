@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.nobrush, .frame-outer, .frame-inner {
+	fill: none;
+}
+
+/*** pixmaps ***/
+
+.breadcrumb .brush {
+	fill: #ebdbb2;
+}
+.breadcrumb .pen {
+	fill: none;
+	stroke: #ebdbb2;
+	stroke-width: 25.8739
+}
+
+.pixmap .brush {
+	fill: #ebdbb2;
+}
+.pixmap .pen {
+	fill: none;
+	stroke: #ebdbb2;
+	stroke-width: 25.8739;
+}
+
+.tabbar .brush {
+	fill: #ebdbb2;
+}
+
+.tabbar .pen {
+	fill: none;
+	stroke: #ebdbb2;
+	stroke-width: 25.8739
+}
+
+#filerPane      		.brush { fill: #458588; }
+#logo					.brush { fill: #fb4934; }
+#monoLogo				.brush { fill: #ebdbb2; }
+#outlinePane    		.brush { fill: #83a598; }
+#outputPane     		.brush { fill: #b8bb26; }
+#projectPane    		.brush { fill: #fb4934; }
+#senderPane     		.brush { fill: #d3869b; }
+#sessionPane    		.brush { fill: #83a598; }
+#start          		.brush { fill: #b8bb26; }
+#stop           		.brush { fill: #fb4934; }
+#transferPane   		.brush { fill: #8ec07c; }
+
+#colorDarkCyan			.brush { fill-opacity: 0.88; fill: #689d6a; }
+#colorDeepPink			.brush { fill-opacity: 0.88; fill: #d3869b; }
+#colorForestGreen		.brush { fill-opacity: 0.88; fill: #98971a; }
+#colorGoldenrod			.brush { fill-opacity: 0.88; fill: #d79921; }
+#colorIndianRed			.brush { fill-opacity: 0.88; fill: #cc241d; }
+#colorMediumOrchid		.brush { fill-opacity: 0.88; fill: #b16286; }
+#colorMediumSlateBlue	.brush { fill-opacity: 0.88; fill: #458588; }
+#colorOlive				.brush { fill-opacity: 0.88; fill: #98971a; }
+#colorRed				.brush { fill-opacity: 0.88; fill: #fb4934; }
+#colorRoyalBlue			.brush { fill-opacity: 0.88; fill: #458588; }
+#colorSteelBlue			.brush { fill-opacity: 0.88; fill: #458588; }
+#colorTeal				.brush { fill-opacity: 0.88; fill: #689d6a; }
+
+/*** symbols ***/
+
+.symbol {
+	font-family: "GeistMono Nerd Font";
+	font-size: 255.212px;
+	font-weight: normal;
+	fill: #ebdbb2;
+	stroke: #ebdbb2;
+	stroke-width: 2.96615;
+}
+
+#a .frame-outer, #A .frame-inner { stroke: #fb4934; fill: #fb4934; }
+#b .frame-outer, #B .frame-inner { stroke: #458588; fill: #458588; }
+#c .frame-outer, #C .frame-inner { stroke: #b16286; fill: #b16286; }
+#d .frame-outer, #D .frame-inner { stroke: #d65d0e; fill: #d65d0e; }
+#e .frame-outer, #E .frame-inner { stroke: #83a598; fill: #83a598; }
+#f .frame-outer, #F .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#g .frame-outer, #G .frame-inner { stroke: #cc241d; fill: #cc241d; }
+#h .frame-outer, #H .frame-inner { stroke: #98971a; fill: #98971a; }
+#i .frame-outer, #I .frame-inner { stroke: #d3869b; fill: #d3869b; }
+#j .frame-outer, #J .frame-inner { stroke: #d79921; fill: #d79921; }
+#k .frame-outer, #K .frame-inner { stroke: #83a598; fill: #83a598; }
+#l .frame-outer, #L .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#m .frame-outer, #M .frame-inner { stroke: #b8bb26; fill: #b8bb26; }
+#n .frame-outer, #N .frame-inner { stroke: #8ec07c; fill: #8ec07c; }
+#o .frame-outer, #O .frame-inner { stroke: #d5c4a1; fill: #d5c4a1; }
+#p .frame-outer, #P .frame-inner { stroke: #8ec07c; fill: #8ec07c; }
+#q .frame-outer, #Q .frame-inner { stroke: #fb4934; fill: #fb4934; }
+#r .frame-outer, #R .frame-inner { stroke: #fabd2f; fill: #fabd2f; }
+#s .frame-outer, #S .frame-inner { stroke: #d3869b; fill: #d3869b; }
+#t .frame-outer, #T .frame-inner { stroke: #fb4934; fill: #fb4934; }
+#u .frame-outer, #U .frame-inner { stroke: #98971a; fill: #98971a; }
+#v .frame-outer, #V .frame-inner { stroke: #8ec07c; fill: #8ec07c; }
+#w .frame-outer, #W .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#x .frame-outer, #X .frame-inner { stroke: #cc241d; fill: #cc241d; }
+#y .frame-outer, #Y .frame-inner { stroke: #d3869b; fill: #d3869b; }
+#z .frame-outer, #Z .frame-inner { stroke: #d3869b; fill: #d3869b; }
+#num0 .frame-outer, #Num0 .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#num1 .frame-outer, #Num1 .frame-inner { stroke: #8ec07c; fill: #8ec07c; }
+#num2 .frame-outer, #Num2 .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#num3 .frame-outer, #Num3 .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#num4 .frame-outer, #Num4 .frame-inner { stroke: #458588; fill: #458588; }
+#num5 .frame-outer, #Num5 .frame-inner { stroke: #b16286; fill: #b16286; }
+#num6 .frame-outer, #Num6 .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#num7 .frame-outer, #Num7 .frame-inner { stroke: #d3869b; fill: #d3869b; }
+#num8 .frame-outer, #Num8 .frame-inner { stroke: #cc241d; fill: #cc241d; }
+#num9 .frame-outer, #Num9 .frame-inner { stroke: #b16286; fill: #b16286; }
+#and .frame-outer,      #And .frame-inner      { stroke: #d65d0e; fill: #d65d0e; }
+#angles .frame-outer,   #Angles .frame-inner   { stroke: #83a598; fill: #83a598; }
+#asterisk .frame-outer, #Asterisk .frame-inner { stroke: #98971a; fill: #98971a; }
+#at .frame-outer,       #At .frame-inner       { stroke: #b16286; fill: #b16286; }
+#braces .frame-outer,   #Braces .frame-inner   { stroke: #fb4934; fill: #fb4934; }
+#brackets .frame-outer, #Brackets .frame-inner { stroke: #98971a; fill: #98971a; }
+#dollar .frame-outer,   #Dollar .frame-inner   { stroke: #d79921; fill: #d79921; }
+#dot .frame-outer,      #Dot .frame-inner      { stroke: #b16286; fill: #b16286; }
+#equal .frame-outer,    #Equal .frame-inner    { stroke: #cc241d; fill: #cc241d; }
+#exclamation .frame-outer, #Exclamation .frame-inner { stroke: #fe8019; fill: #fe8019; }
+#minus .frame-outer,    #Minus .frame-inner    { stroke: #8ec07c; fill: #8ec07c; }
+#parenthesis .frame-outer, #Parenthesis .frame-inner { stroke: #b16286; fill: #b16286; }
+#percent .frame-outer,  #Percent .frame-inner  { stroke: #cc241d; fill: #cc241d; }
+#plus .frame-outer,     #Plus .frame-inner     { stroke: #fabd2f; fill: #fabd2f; }
+#plus .frame-outer,     #Plus .frame-inner     { stroke: #d79921; fill: #d79921; }
+#pound .frame-outer,    #Pound .frame-inner    { stroke: #83a598; fill: #83a598; }
+#power .frame-outer,    #Power .frame-inner    { stroke: #d3869b; fill: #d3869b; }
+#question .frame-outer, #Question .frame-inner { stroke: #689d6a; fill: #689d6a; }
+#quotes .frame-outer,   #Quotes .frame-inner   { stroke: #cc241d; fill: #cc241d; }
+#slash .frame-outer,    #Slash .frame-inner    { stroke: #689d6a; fill: #689d6a; }
+#snippet .frame-outer,  #Snippet .frame-inner  { stroke: #d3869b; fill: #d3869b; }
+#label .symbol,         #Label .symbol         { stroke: #83a598; fill: #83a598; }
