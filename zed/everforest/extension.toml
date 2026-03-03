@@ -1,0 +1,23 @@
+id = "everforest"
+name = "Everforest Theme (regular, material, blur)"
+version = "0.1.1"
+schema_version = 1
+description = "🌲 Everforest color scheme for Zed. Theme comes in regular, material, and blur variants."
+repository = "https://github.com/albertsko/zed-everforest"
+authors = ["Albert Skonieczny <github.com/albertsko>"]
+themes = ["themes/everforest-regular.json", "themes/everforest-blur.json", "themes/everforest-material.json"]
+icon_themes = []
+languages = []
+capabilities = []
+
+[lib]
+
+[grammars]
+
+[language_servers]
+
+[context_servers]
+
+[agent_servers]
+
+[slash_commands]
