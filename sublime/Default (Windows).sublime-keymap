@@ -1,0 +1,29 @@
+[
+	{
+		"keys": ["ctrl+alt+t"],
+		"command": "terminus_open",
+		"args":
+		{
+			"cwd": "${file_path:${folder}}",
+			"panel_name": "Terminus",
+			"cmd": "powershell.exe",
+		},
+	},
+	{
+		"keys": ["ctrl+alt+shift+t"],
+		"command": "terminus_open",
+		"args":
+		{
+			"cwd": "${file_path:${folder}}",
+			"cmd": "powershell.exe",
+		},
+	},
+	{
+		"keys": ["ctrl+shift+,"],
+		"command": "prev_modification",
+	},
+	{
+		"keys": ["ctrl+shift+."],
+		"command": "next_modification",
+	},
+]

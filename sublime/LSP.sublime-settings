@@ -1,0 +1,5 @@
+{
+	"show_diagnostics_count_in_view_status": true,
+	"show_code_actions_bulb": true,
+	"semantic_highlighting": true,
+}

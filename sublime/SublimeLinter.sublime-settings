@@ -1,0 +1,7 @@
+{
+	"gutter_theme": "Circle",
+	"lint_mode": "background",
+	"show_marks_in_minimap": true,
+	"show_panel_on_save": "never",
+	"statusbar.show_active_linters": true,
+}

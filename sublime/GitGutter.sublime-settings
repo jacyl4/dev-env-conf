@@ -1,0 +1,5 @@
+{
+	"show_in_minimap": true,
+	"show_markers_on_untracked_file": false,
+	"status_bar_text": "Git: {branch}",
+}
